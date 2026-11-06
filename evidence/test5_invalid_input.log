@@ -1,0 +1,21 @@
+[0m[1mdata.aws_vpc.default: Reading...[0m[0m
+[0m[1mdata.aws_ami.ubuntu: Reading...[0m[0m
+[0m[1maws_key_pair.deployer: Refreshing state... [id=int333-webserver-key][0m
+[0m[1mdata.aws_ami.ubuntu: Read complete after 0s [id=ami-082a1ff88c78c6290][0m
+[0m[1mdata.aws_vpc.default: Read complete after 0s [id=vpc-0277b25fcc0176ab2][0m
+[0m[1maws_security_group.web: Refreshing state... [id=sg-0b72e2cb29842757e][0m
+
+[0m[1m[31mPlanning failed.[0m[1m Terraform encountered an error while generating this plan.[0m
+
+[0m[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mInvalid value for variable[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  on variables.tf line 7:
+[31m│[0m [0m   7: [4mvariable "instance_type"[0m {[0m
+[31m│[0m [0m    [90m├────────────────[0m
+[31m│[0m [0m[0m    [90m│[0m [1mvar.instance_type[0m is "banana"
+[31m│[0m [0m[0m
+[31m│[0m [0minstance_type must be t2.micro or t3.micro.
+[31m│[0m [0m
+[31m│[0m [0mThis was checked by the validation rule at variables.tf:12,3-13.
+[31m╵[0m[0m

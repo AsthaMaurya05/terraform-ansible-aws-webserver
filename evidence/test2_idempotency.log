@@ -1,0 +1,44 @@
+
+PLAY [Configure web server and deploy static website] **************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [52.66.244.187]
+
+TASK [Update apt package cache] ************************************************
+ok: [52.66.244.187]
+
+TASK [Install Nginx] ***********************************************************
+ok: [52.66.244.187]
+
+TASK [Create dedicated user for the website] ***********************************
+ok: [52.66.244.187]
+
+TASK [Create website directory owned by that user] *****************************
+ok: [52.66.244.187]
+
+TASK [Deploy index.html from template] *****************************************
+ok: [52.66.244.187]
+
+TASK [Deploy Nginx server block] ***********************************************
+ok: [52.66.244.187]
+
+TASK [Enable our site] *********************************************************
+ok: [52.66.244.187]
+
+TASK [Disable the default Nginx welcome site] **********************************
+ok: [52.66.244.187]
+
+TASK [Ensure Nginx is running and starts on boot] ******************************
+ok: [52.66.244.187]
+
+TASK [Apply pending handlers now] **********************************************
+
+TASK [Wait for port 80] ********************************************************
+ok: [52.66.244.187]
+
+TASK [Request the home page] ***************************************************
+ok: [52.66.244.187]
+
+PLAY RECAP *********************************************************************
+52.66.244.187              : ok=12   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
