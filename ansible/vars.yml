@@ -1,0 +1,5 @@
+web_user: webdeploy
+web_root: /var/www/int333-site
+site_title: "INT333 DevOps Project"
+student_name: "Astha Maurya"
+reg_no: "12300541"
